@@ -1,0 +1,283 @@
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */{
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */{
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+h1, h2, h3, h4, h5, h6{ font-size: 100%; }
+address, cite, dfn, em, var{ font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp{ font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+
+/** 重置列表元素 **/
+ul, ol,li{ list-style: none; }
+
+/** 重置文本格式元素 **/
+a{ text-decoration: none;  cursor: pointer;color: inherit; }
+a:hover,a:focus{ text-decoration: none; }
+
+article,p {
+    word-break: break-all;
+}
+
+/*去掉IE的虚线框*/
+a:active, a:focus, a:visited{
+    border:none;
+    outline:none;
+    text-decoration: none;
+    color: inherit;
+}
+
+/** 重置表单元素 **/
+fieldset, img{ border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea{ font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+
+/** 重置表格元素 **/
+table{ border-collapse: collapse; border-spacing: 0; }
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.swiper-container{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.size{
+    height: 100%;
+    width: 100%;
+}
+.nav-button{
+    display: none;
+}
+
+.navigation{
+    position: fixed;
+    top: 0px;
+    left: 150px;
+    z-index: 2;
+    margin-top: 27px;
+}
+
+
+
+
+.content{
+
+}
+
+
+.logo{
+    position: absolute;
+    z-index: 2;
+    height: 80px;
+    width: 90px;
+    background-image: url("../img/logo.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:60% 50%;
+    float: left;
+
+}
+
+.home{
+    float: left;
+}
+.service{
+    float: left;
+}
+.about{
+    float: left;
+}
+.contact{
+    float: left;
+}
+.technology{
+    float: left;
+}
+
+
+.text-style{
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+
+}
+
+.p1{
+    font-size: 21px;
+    font-weight: bold;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.75);
+}
+
+
+.p2{
+    font-size: 12px;
+    font-weight: bold;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.75);
+}
+
+@media(max-width:600px){
+    .content{
+      width: 100%;
+    }
+
+    .navigation{
+        background: rgba(0,0,0,0.7);
+        padding: 0.25rem;
+        height: 5.5rem;
+        width: 2rem;
+        position: fixed;
+        z-index: 2;
+        margin-top: 0.27rem;
+        top:1.6rem;
+        left: unset;
+        right: -2rem;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        opacity: 0;
+    }
+
+    .nav-active{
+        right: 0rem;
+        opacity: 1;
+    }
+
+    .logo{
+        margin: 0.1rem 0.3rem;
+        position: absolute;
+        z-index: 2;
+        background-image: url("../img/logo.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        float: left;
+        height: 1rem;
+        width: 1rem;
+        background-size:  100%;
+    }
+
+    .text-style{
+        display: block;
+        color: rgba(255,255,255,0.5);
+        cursor: pointer;
+        text-align: center;
+        height: 1.1rem;
+        width: 2rem;
+    }
+
+    .home{
+        float: none;
+    }
+    .service{
+        float: none;
+    }
+    .about{
+        float: none;
+    }
+    .contact{
+        float: none;
+    }
+
+    .technology{
+        float: none;
+    }
+
+    .p1{
+        text-align: center;
+        font-size: 0.36rem;
+        line-height: 0.34rem;
+        font-weight: bold;
+        -webkit-transform-origin-x: 0;
+        -webkit-transform: scale(0.75);
+    }
+
+
+    .p2{
+        text-align: center;
+        font-size: 0.27rem;
+        font-weight: bold;
+        -webkit-transform-origin-x: 0;
+        -webkit-transform: scale(0.75);
+    }
+    .nav-button{
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.75rem;
+        z-index: 3;
+        border: none;
+        background: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+        color: #000000;
+        filter:alpha(Opacity=40);
+        -moz-opacity:0.4;
+        opacity: 0.4;
+        height: 0.5rem;
+        width: 0.5rem;
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+
+    .nav-button.hover {
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.75rem;
+        z-index: 3;
+        border: none;
+        background:url("../img/close.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+        filter:alpha(Opacity=40);
+        -moz-opacity:0.4;
+        opacity: 0.4;
+        height: 0.5rem;
+        width: 0.5rem;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+
+
+
+}

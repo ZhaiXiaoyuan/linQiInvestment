@@ -1,0 +1,100 @@
+
+.bg-home {
+    background-image:url('../img/首页.png');
+    background-position: center ;
+    height: 100%;
+    width: 100%;
+    filter:alpha(Opacity=40);
+    -moz-opacity:0.4;
+    opacity: 0.4;
+
+}
+
+
+ .home-text{
+     height: 300px;
+     width: 600px;
+     position: absolute;
+     top: 390px;
+     left: 120px;
+ }
+ .text1{
+     font-size: 30px;
+     font-weight: bold;
+     color: #333333;
+     line-height: 50px;
+
+
+
+ }
+ .text2{
+     font-size: 50px;
+     position: relative;
+     display: inline-block;
+     color: #333333;
+     line-height: 70px;
+
+ }
+
+ .text3{
+     font-size: 23px;
+     color: #999999;
+     letter-spacing:1px;
+
+
+
+ }
+ .text2::after{
+     content: "";
+     position: absolute;
+     bottom: 0rem;
+     left: 0rem;
+     width: 100%;
+     border: 1px #999999 solid;
+ }
+
+ @media(max-width:600px){
+     .bg-home{
+         background-image: url("../img/home.png") ;
+         background-size: 100% 100%;
+         background-repeat: no-repeat;
+     }
+     .home-text{
+
+         position: absolute;
+         height: 6rem;
+         width: 3rem;
+         writing-mode: vertical-lr;
+         -webkit-writing-mode: vertical-lr;
+         top: 4rem;
+         left: 0.7rem;
+
+     }
+     .text1{
+         font-size: 0.38rem;
+         line-height: 0.3rem;
+         font-weight: bold;
+         color: #333333;
+     }
+     .text2{
+         font-size: 0.5rem;
+         line-height: 0.9rem;
+         position: relative;
+         display: inline-block;
+         color: #333333;
+     }
+     .text3{
+         font-size: 0.24rem;
+         color: #999999;
+         letter-spacing:1px;
+     }
+
+     .text2::after{
+         width: 0%;
+         height: 100%;
+         top: 0rem;
+         right: 0rem;
+         left: unset;
+         bottom: unset;
+     }
+ }
