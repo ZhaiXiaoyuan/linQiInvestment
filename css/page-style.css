@@ -33,7 +33,7 @@ a:active, a:focus, a:visited{
     border:none;
     outline:none;
     text-decoration: none;
-    color: inherit;
+  /*  color: inherit;*/
 }
 
 /** 重置表单元素 **/
