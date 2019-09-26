@@ -70,7 +70,21 @@ table{ border-collapse: collapse; border-spacing: 0; }
     height: 100%;
     width: 100%;
 }
-
+.footer{
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.footer p{
+    /* transform: scale(0.88);*/
+    letter-spacing: 1px;
+}
 
 
 
@@ -153,6 +167,15 @@ table{ border-collapse: collapse; border-spacing: 0; }
 }
 
 @media(max-width:600px){
+    .footer{
+        width: 100%;
+        padding: 0.3rem 0rem;
+        font-size: 12px;
+        background: none;
+    }
+    .footer  p{
+        transform: scale(0.88);
+    }
     .content{
       width: 100%;
     }
