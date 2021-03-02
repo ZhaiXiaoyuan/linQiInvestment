@@ -81,7 +81,7 @@ table{ border-collapse: collapse; border-spacing: 0; }
     color: #999;
     text-align: center;
 }
-.footer p{
+.footer p, a{
     /* transform: scale(0.88);*/
     letter-spacing: 1px;
 }
