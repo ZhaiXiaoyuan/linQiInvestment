@@ -173,6 +173,11 @@ table{ border-collapse: collapse; border-spacing: 0; }
         font-size: 12px;
         background: none;
     }
+    .footer .cnzz-btn{
+        position: fixed;
+        right: 0.1rem;
+        bottom: 0.1rem;
+    }
     .footer  p{
         transform: scale(0.88);
     }
